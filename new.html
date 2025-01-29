@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gajjala Ajay - Super Edge Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #fffacd; /* Pale yellow background */
+            background-image: linear-gradient(45deg, #fffacd, #ffeb3b, #ff7f50, #ff6347);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            padding: 40px 20px;
+            animation: fadeInHeader 2s ease-out;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .slide-in {
+            transform: translateX(-100%);
+            animation: slideIn 1s ease-out forwards;
+            text-align: center;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff; /* White background for sections */
+            animation: fadeIn 2s ease-in-out forwards;
+            display: inline-block;
+            width: 80%;
+            max-width: 900px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        section:hover {
+            background-color: #32cd32; /* Green color for hover */
+            transform: scale(1.05);
+        }
+
+        section:active {
+            background-color: #00ff00; /* Brighter green on click */
+        }
+
+        footer {
+            font-size: 1.2rem;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.1); /* Light footer background */
+            animation: fadeIn 2s ease-in-out forwards;
+            text-align: center;
+        }
+
+        a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        h2, h3 {
+            color: #ffeb3b;
+        }
+
+        ul {
+            text-align: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        /* Center alignment for contact info */
+        .contact p {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .education, .experience, .projects, .coursework, .achievements {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Gajjala Ajay</h1>
+        <p class="fade-in">Aspiring Business Intelligence Engineer</p>
+    </header>
+
+    <section class="experience fade-in">
+        <h2>Professional Experience</h2>
+        <h3>Machine Learning Intern | Atharvo, Bangalore</h3>
+        <ul>
+            <li>Designed ETL pipelines using Python & SQL for SQL/NoSQL databases.</li>
+            <li>Applied ML techniques for business intelligence solutions.</li>
+            <li>Collaborated with cross-functional teams.</li>
+        </ul>
+    </section>
+
+    <section class="education slide-in">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech in Computer Science</strong> - CMR Institute of Technology (8.73/10)</li>
+            <li><strong>Intermediate (12th Grade)</strong> - Narayana Jr College (91.8%)</li>
+            <li><strong>10th Grade</strong> - Vidya Bharathi High School (9.7 GPA)</li>
+        </ul>
+    </section>
+
+    <section class="technical-skills slide-in">
+        <h2>Technical Skills</h2>
+        <h3>Programming Languages:</h3>
+        <ul>
+            <li>Python - Proficient</li>
+            <li>C - Intermediate</li>
+            <li>Java, R - Basics</li>
+            <li>Scilab - Basics</li>
+        </ul>
+        <h3>Full Stack Technologies:</h3>
+        <ul>
+            <li>Frontend: HTML, CSS, JS</li>
+            <li>Backend: Django, Node JS</li>
+            <li>Database: MongoDB, SQL</li>
+        </ul>
+        <h3>Data Analytics:</h3>
+        <ul>
+            <li>SQL, Tableau, Numpy, Pandas, PowerBI, Scikit-learn, Data Modeling, ETL Process, Report Analysis</li>
+        </ul>
+        <h3>Developer Tools:</h3>
+        <ul>
+            <li>GitHub, Visual Studio, Eclipse, Google Colab, Jupyter Notebook</li>
+        </ul>
+        <h3>Machine Learning Techniques:</h3>
+        <ul>
+            <li>Classification, Linear Regression Modeling, Clustering, Decision Trees, Statistics, NLP</li>
+        </ul>
+    </section>
+
+    <section class="coursework slide-in">
+        <h2>Coursework</h2>
+        <ul>
+            <li>Kaggle Python Certification</li>
+            <li>Cisco Python Fundamentals</li>
+            <li>Kaggle SQL Certification</li>
+            <li>Dhaapps Summer Boot Camp</li>
+            <li>Accenture Data Visualization Course</li>
+        </ul>
+    </section>
+
+    <section class="achievements slide-in">
+        <h2>Honors & Achievements</h2>
+        <ul>
+            <li>Institute Innovation Council - Lead [2022-2024]</li>
+            <li>Google Developer Student Club - Core Member</li>
+            <li>Best Speaker – Nexus Event</li>
+            <li>Best Ideate and Presenter – CMRIT Hackathon</li>
+            <li>Best Innovative Startup – IGNITE 5.0 by AICSKU</li>
+        </ul>
+    </section>
+
+    <section class="contest-ratings slide-in">
+        <h2>Contest Ratings</h2>
+        <ul>
+            <li>Cocubes - 661 (96%)</li>
+            <li>Leetcode - 1607</li>
+            <li>GFG - 179 rank</li>
+            <li>CMRIT PBT - 9 rank</li>
+        </ul>
+    </section>
+
+    <section class="contact fade-in">
+        <h2>Contact Information</h2>
+        <p>📞 +91 7989862705 | ✉️ <a href="mailto:ajaygajjela23@gmail.com">ajaygajjela23@gmail.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/gajjala-ajay-52347825b/">LinkedIn</a> | 🖥️ <a href="https://github.com/ajaygajjela">GitHub</a></p>
+    </section>
+
+    <footer class="fade-in">
+        <p>🚀 Let's Connect & Build Scalable, Data-Driven Solutions!</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const fadeInElements = document.querySelectorAll(".fade-in");
+            fadeInElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = "1";
+                }, index * 500);
+            });
+
+            const slideInElements = document.querySelectorAll(".slide-in");
+            slideInElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.transform = "translateX(0)";
+                }, index * 500);
+            });
+        });
+    </script>
+</body>
+</html>
